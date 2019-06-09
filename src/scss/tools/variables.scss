@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap|Poppins&display=swap');
+
+
+//Different messurments
+$l-size: 2.5rem;
+$m-size: 2rem;
+$s-size: 1.8rem;
+$xs-size: 1.3rem;
+
+
+//vary grey colors
+
+$color-grey-light-1: #faf9f9;
+
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+//fonts types
+
+$text-font: 'Montserrat', sans-serif;
+$main-header-font: 'Oswald', sans-serif;
+$secondary-header-font: 'Poppins', sans-serif;
+
+//colors
+$color-primary: #ffca28;
+$color-primary-dark: #ffc400;
+$color-primary-light: #ffd54f;
+
+$secondary-color: #e91e63;
+$secondary-color-light:#e44985;
+
+//RESPONSIVE BREAKPOINTS
+$bp-large: 75em;
+$bp-tablet: 48em;
+$bp-mobile-l: 26.5625em;
+

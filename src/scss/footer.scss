@@ -1,0 +1,82 @@
+@import './tools/variables.scss';
+
+.footer{
+    grid-column: full-start/center-end;
+    background-color: $color-grey-dark-2;
+    color: #fff;
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-mobile-l){
+     grid-column: full-start/full-end;
+     flex-direction: column;
+    
+    } 
+    &__text{
+        @media only screen and (max-width: $bp-mobile-l){
+            padding: 2rem;
+                  
+           } 
+    }
+    &__link{
+        color:white;
+        font-size: 3rem;
+        
+    }
+    &__instructors{
+        @media only screen and (max-width: $bp-mobile-l){
+            
+             width: 70%;     
+           } 
+    }
+    &__header{
+        text-align: center;
+        padding-bottom: 3rem;
+        @media only screen and (max-width: $bp-mobile-l){
+            padding: 2rem;
+                  
+           } 
+        &--container{
+
+        }
+    }
+    &__image{
+        border-radius: 50%;
+        &--container{
+            display: flex;
+            justify-content: space-between;
+            width: 35rem;
+            @media only screen and (max-width: $bp-mobile-l){
+                width: 100%;
+                      
+               } 
+        }
+        &--block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        &--name{
+            margin-top: 2rem;
+        }
+    }
+    &__social-media{
+        text-align: center;
+        h3{
+            font-size: 3rem;
+        }
+        .fab{
+            font-size: 3rem;
+            padding: 1rem;
+            
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+    }
+}

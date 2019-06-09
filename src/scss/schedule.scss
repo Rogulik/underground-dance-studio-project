@@ -1,0 +1,76 @@
+@import './tools/variables.scss';
+
+.schedule{
+    grid-column: center-start/center-end;
+    
+    margin-top: 2rem;
+    @media only screen and (max-width: $bp-mobile-l){
+           grid-column: full-start/full-end;
+    }
+    &__sub-title{
+        text-align: center;
+        margin: 3rem 0;
+        
+
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        @media only screen and (max-width: $bp-mobile-l){
+         flex-direction: column;      
+        }
+
+        &--name{
+            font-weight: 700;
+            font-size: 1.8rem;
+            text-align: center;
+            background-color: $color-primary;
+            padding: .5rem;
+        }
+        &--block{
+            width: 15rem;
+            height: 12rem;
+            background-color: $secondary-color;
+            margin: 1rem 0;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            @media only screen and (max-width: $bp-mobile-l){
+               width: 100%;
+            }
+            
+            
+        }
+        .time{
+            padding-bottom: 2rem; 
+        }
+        .group{
+            font-weight: 700;
+        }
+    }
+    &__row{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+}
+.row{
+    &-1{
+
+    }
+    &-2{
+        
+    }
+    &-3{
+        
+    }
+    &-4{
+        
+    }
+    &-5{
+        
+    }
+}

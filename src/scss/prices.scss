@@ -1,0 +1,91 @@
+@import './tools/variables.scss';
+
+.prices{
+    grid-column: center-start/center-end;
+    margin: 3rem 0 12rem 0;
+    @media only screen and (max-width: $bp-mobile-l){
+        grid-column: full-start/full-end;          
+    }
+    &__header{
+        text-align: center;
+    }
+    &__container{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+        align-items: start;
+        align-content: end;
+        justify-content: center;
+        grid-gap: 3rem;
+        justify-items: center;
+    }
+    &__card{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 1rem 2rem rgba(#000,.2);
+        width: 43rem;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        &--header{
+            font-size: 1.9rem;
+            padding: 0 2rem;
+        }
+
+        &--text{
+            display: flex;
+            flex-direction: column;
+            //justify-content: space-evenly;
+            //width: 30rem;
+            
+            
+            &:nth-child(2){
+                
+                
+            }
+            &:nth-child(1){
+                
+            }
+        }
+        &--list{
+            list-style: none;
+            display: flex;
+            //flex-direction: column;
+            justify-content: space-around;
+            
+            padding: 2rem 0;
+            
+        }
+        &--list-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            
+
+        }
+        &--paragraph{
+            font-size: 1.8rem;
+            margin-top: .3rem;
+            
+        }
+        .far,
+         .fas{
+            font-size: 1.8rem;
+            color: $secondary-color;
+        }
+        &--image{
+           height: 18rem;
+           //width: 30rem;
+           object-fit: cover;
+           position: relative;
+           
+        }
+        &--photo{
+            width: 24rem;
+            
+            
+            
+        }
+    }
+}

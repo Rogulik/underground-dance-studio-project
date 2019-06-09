@@ -1,0 +1,78 @@
+@import './tools/variables.scss';
+
+.about{
+    grid-column: full-start/full-end;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    //flex-direction: column;
+    //margin-top: 5rem;
+    position: relative;
+    @media only screen and (max-width: $bp-mobile-l){
+        flex-direction: column;
+        
+     }
+
+    &__text{
+        width: 40%;
+        padding: 5rem;
+        background-color: $color-primary;
+        text-align: right;
+        @media only screen and (max-width: $bp-mobile-l){
+            width: 100%;
+
+         }
+    }
+    &__title{
+        margin-bottom: 2rem;
+    }
+    &__paragraph{
+        font-size: 1.8rem;
+        color: #fff;
+        
+    }
+
+    &__photo-list-container{
+        width: 60%;
+        padding: 5rem;
+        background-color: $secondary-color-light;
+        display: flex;
+        @media only screen and (max-width: $bp-mobile-l){
+            width: 100%;
+         }
+        
+    }
+    
+    &__photo{
+        width: 45%;
+        height: 100%;
+        @media only screen and (max-width: $bp-mobile-l){
+            width: 0;
+            height: 0;
+            visibility: hidden;
+         }
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        @media only screen and (max-width: $bp-mobile-l){
+         width: 100%;
+         }
+    }
+    &__list-item{
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        
+    }
+    .fa-compact-disc{
+        color: #FFF;
+        font-size: 2rem;
+        margin-right: 1.5rem;
+        margin-top: .2rem;
+    }
+}
